@@ -1,10 +1,18 @@
 * Use databricks developer resources link
+
 * Have JDK instead of JRE (for Maven etc)
+
 * Download Anaconda for Python installation
+
 * scala spark shell
   (1) $ spark-*/bin/spark-shell
   (2) scala>
   (3) scala> sc
   (4) scala> sc.master
+
 * To correct networking errors
   (1) $ SPARK_LOCAL_IP=127.0.0.1 spark-*/bin/spark-shell // when spark launches, it starts a server for UI and needs IP address to bind to
+
+* scala 
+  (1) http://scala-lang.org/
+  (2) crash course http://lintool.github.io/SparkTutorial/slides/day1_Scala_crash_course.pdf
