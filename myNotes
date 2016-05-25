@@ -16,3 +16,9 @@
 * scala 
   (1) http://scala-lang.org/
   (2) crash course http://lintool.github.io/SparkTutorial/slides/day1_Scala_crash_course.pdf
+  
+** sc.master
+  - local -- 1 worker thread
+  - local[k] -- k worker threads
+  - spark://HOST:PORT -- spark standalone cluster
+  - mesos://HOST:PORT -- mesos cluster
