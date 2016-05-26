@@ -22,3 +22,27 @@
   - local[k] -- k worker threads
   - spark://HOST:PORT -- spark standalone cluster
   - mesos://HOST:PORT -- mesos cluster
+
+** To run scala examples, run sbt (scala build tool)
+  - ../sbt/sbt assembly
+  - ./bin/run-example SparkPi 2 local // 2 partitions, local cluster
+  
+** Look into Monte Carlo method for estimation examples
+
+** Spark streaming example - TwitterAlgebirdHLL - TwittterAlgebirdCMS
+  - have a twitter account
+  - get an authentication token and use twitter4j library to put in properties file
+  - details at twitter algebird wiki for approximation algorithm
+  
+** Shark --> spark on hive (hive optimizer not optimal) --> replaced with Spark SQL (optimizer called catalyst)
+  - obj.registerTempTable("obj name")
+  - create sql statements on obj
+** Spark SQL has DSL comparable with SQL and LINQ
+
+** Using HiveContext, queries can be written in HiveQL  
+
+** Launching python notebook
+  - IPYTHON_OPTS="notebook --pylab inline" ./bin/pyspark
+  - Instead of using case class as in scala, in python data can be mapped to a Row object
+  - sqlCtx.inferSchema(obj) // extra step in python before registerTempTable()
+** Parquet files are columnar format
